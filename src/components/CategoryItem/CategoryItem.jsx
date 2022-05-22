@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 export default function CategoryItem(props) {
   const { title, imgUrl } = props;
   return (
-    <div
+    <Link to={`/shop/${title}`}
       className="w-[30%] p-4 sm:p-12 grow min-w-[150px] sm:min-w-[245px] border-2 border-black flex justify-center items-center cursor-pointer group bg-cover aspect-square sm:aspect-video"
       style={{ backgroundImage: `url(${imgUrl})` }}
     >
@@ -15,6 +16,6 @@ export default function CategoryItem(props) {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
