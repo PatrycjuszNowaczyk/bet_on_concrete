@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Shop from "./pages/Shop/Shop";
 import ShopCategory from "./pages/Shop/ShopCategory/ShopCategory";
 import Contact from "./pages/Contact/Contact";
+import O_404 from "./pages/404/O_404";
 function App() {
   return (
     <Routes>
@@ -15,7 +16,7 @@ function App() {
         <Route path=":categoryId" element={<ShopCategory />} />
       </Route>
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<div>404</div>} />
+      <Route path="*" element={<O_404 />} />
     </Routes>
   );
 }
