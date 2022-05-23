@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bet_on_concrete/static/css/main.219cab1f.css",
-    "main.js": "/bet_on_concrete/static/js/main.c6587b37.js",
+    "main.js": "/bet_on_concrete/static/js/main.215902ab.js",
     "index.html": "/bet_on_concrete/index.html",
     "main.219cab1f.css.map": "/bet_on_concrete/static/css/main.219cab1f.css.map",
-    "main.c6587b37.js.map": "/bet_on_concrete/static/js/main.c6587b37.js.map"
+    "main.215902ab.js.map": "/bet_on_concrete/static/js/main.215902ab.js.map"
   },
   "entrypoints": [
     "static/css/main.219cab1f.css",
-    "static/js/main.c6587b37.js"
+    "static/js/main.215902ab.js"
   ]
 }
