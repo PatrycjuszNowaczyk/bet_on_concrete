@@ -1,5 +1,3 @@
 export default function ShopCategory() {
-  return (
-    <div>ShopCategory</div>
-  )
+  return <div>ShopCategory</div>;
 }
