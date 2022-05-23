@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bet-on-concrete/static/css/main.219cab1f.css",
+    "main.js": "/bet-on-concrete/static/js/main.c6587b37.js",
+    "index.html": "/bet-on-concrete/index.html",
+    "main.219cab1f.css.map": "/bet-on-concrete/static/css/main.219cab1f.css.map",
+    "main.c6587b37.js.map": "/bet-on-concrete/static/js/main.c6587b37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.219cab1f.css",
+    "static/js/main.c6587b37.js"
+  ]
+}
