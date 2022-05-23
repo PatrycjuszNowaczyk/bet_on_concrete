@@ -3,7 +3,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 //Components
+import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer/Footer";
+
 //Pages
 import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
