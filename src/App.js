@@ -1,5 +1,7 @@
 // prettier-ignore
 import { React, Routes, Route, Homepage, About, Shop, ShopCategory, Contact, O_404 } from './appImports.js';
+import { React, Routes, Route, Menu, Footer, Homepage, About, Shop, ShopCategory, Contact, O_404 } from './appImports.js';
+
 function App() {
   return (
     <Routes>
