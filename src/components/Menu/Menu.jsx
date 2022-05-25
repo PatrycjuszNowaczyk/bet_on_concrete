@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { IconContext } from "react-icons";
+import { AiOutlineShopping } from "react-icons/ai";
 import { Link } from "react-router-dom";
 export default class Menu extends Component {
   render() {
@@ -12,7 +14,7 @@ export default class Menu extends Component {
               to="/"
             >
               <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
-              Home
+                Home
               </span>
             </Link>
           </li>
@@ -21,29 +23,41 @@ export default class Menu extends Component {
               className="inline-block p-2 mt-1 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
               to="/about"
             >
-                            <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
-              About
+              <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
+                About
               </span>
             </Link>
           </li>
           <li className="relative mx-2">
             <Link
-            className="inline-block p-2 mt-1 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
+              className="inline-block p-2 mt-1 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
               to="/shop"
             >
-                            <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
-              Shop
+              <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
+                Shop
               </span>
             </Link>
           </li>
           <li className="relative mx-2">
             <Link
-            className="inline-block p-2 mt-1 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
+              className="inline-block p-2 mt-1 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
               to="/contact"
             >
-                            <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
-              Contact
+              <span className="relative px-2 py-1 font-AdventPro after:absolute after:top-0 after:left-0 after:border-2 after:border-black after:w-full after:h-full after:opacity-0 after:transform-all after:duration-300 group-hover:after:opacity-100">
+                Contact
               </span>
+            </Link>
+          </li>
+          <li className="relative mx-2 flex items-center">
+            <Link
+              className="inline-block before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:scale-x-0 before:bg-white before:pb-1 before:transition-transform before:duration-700 hover:before:duration-300 hover:before:scale-100 group"
+              to="/cart"
+            >
+              <IconContext.Provider
+                value={{ className: "w-8 h-auto" }}
+              >
+                <AiOutlineShopping />
+              </IconContext.Provider>
             </Link>
           </li>
         </ul>
