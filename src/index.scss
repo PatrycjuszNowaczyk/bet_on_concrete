@@ -15,15 +15,42 @@
   }
 }
 
+// main srollbar styles
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444dd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+// when user selects content
 ::selection {
   background-color: #525252;
   color: #d4d4d4;
 }
 
+// major styles
 html,
 body,
 #root {
   min-height: 100vh;
+}
+
+html{
+  overflow-y: overlay;
 }
 
 #root {
