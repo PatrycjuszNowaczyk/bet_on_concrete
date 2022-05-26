@@ -24,22 +24,20 @@ export default class Shop extends Component {
               {items.map((item) => {
                 return (
                   <div
-                    className="p-2 border-2 border-black rounded-lg basis-1/4 aspect-square"
+                    className="flex items-end relative p-2 bg-neutral-200 hover:bg-black transition-colors duration-300 hover:duration-1000 basis-1/4 aspect-square group"
                     key={item.id}
                   >
-                    <div className="flex flex-row">
-                      <div className="w-1/3">
-                        <img
-                          src={item.mainImg}
-                          alt="mainImg"
-                          className="w-full"
-                        />
-                      </div>
-                      <div className="w-2/3">
-                        <div className="text-xl">{item.name}</div>
-                        <div className="text-lg">{item.producer}</div>
-                        <div className="text-base">{item.description}</div>
-                      </div>
+                    <div
+                      className="absolute flex inset-2 group-hover:inset-1 transition-all duration-300 group-hover:duration-400 bg-cover bg-center"
+                      style={{ backgroundImage: `url(${item.mainImg})` }}
+                    ></div>
+                    <div className="relative flex flex-wrap justify-end bg-opacity-75 grow">
+                      <p className="text-sm md:text-base lg:text-xl leading-tight lg:leading-normal text-center bg-white grow">
+                        <strong>{item.name}</strong>
+                      </p>
+                      <p className="px-1 text-lg lg:text-2xl text-right bg-white border-2 border-black">
+                        {item.price} zł
+                      </p>
                     </div>
                   </div>
                 );
