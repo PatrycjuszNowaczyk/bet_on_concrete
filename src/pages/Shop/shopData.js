@@ -2,7 +2,7 @@ let shopData = {
   items: [
     {
       id: 1,
-      name: "gryzak skórzany",
+      name: "eco gryzak skórzany",
       price: "10",
       producer: "Animini",
       mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
@@ -17,10 +17,10 @@ let shopData = {
     },
     {
       id: 2,
-      name: "przysmak zielony",
-      price: "12",
+      name: "eco przysmak zielony",
+      price: "21",
       producer: "Animini",
-      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      mainImg: "https://image.ceneostatic.pl/data/products/53075392/i-chico-przysmak-kabanosy-zielone-kielbaski-100szt.jpg",
       carouselImgs: [
         "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
         "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
@@ -32,25 +32,25 @@ let shopData = {
     },
     {
       id: 3,
-      name: "suplement na sierść",
-      price: "33",
+      name: "suplement na stawy",
+      price: "34",
       producer: "Doggy",
-      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      mainImg: "https://fish4dogspolska.pl/wp-content/uploads/2020/05/suplement-diety-dla-psa-fish4dogs-stawy.jpg",
       carouselImgs: [
         "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
         "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
         "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
       ],
       description: "To jest opis przysmaku",
-      category: "przysmaki",
+      category: "suplementy",
       availability: "dostępny",
     },
     {
       id: 4,
-      name: "kosmetyk do głowy",
-      price: "94",
+      name: "eco kosmetyk do psa",
+      price: "97",
       producer: "PetLi",
-      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      mainImg: "https://megazoologiczny.pl/pol_pm_Over-zoo-silk-spray-250ml-19145_1.png",
       carouselImgs: [
         "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
         "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
@@ -62,10 +62,10 @@ let shopData = {
     },
     {
       id: 5,
-      name: "akcesorium dla psa",
+      name: "kaganiec super eco",
       price: "125",
       producer: "Choppy",
-      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      mainImg: "https://groomershop.pl/media/catalog/product/thumbnail/64bd19accd0b8c98a3b672933bf160cf/image/0/500x500/111/80/0/6/06d5264ce22d4ad6edccfbcad9459fb9_7.jpg",
       carouselImgs: [
         "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
         "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
