@@ -176,16 +176,18 @@ export default function ShopFilters() {
         <div className="flex gap-2 justify-center items-center">
           <input
             className="w-1/3 p-2 text-center border-2 border-black appearance-none font-bold"
-            type="number"
+            type="text"
             name="cena-od"
             id="cena-od"
+            placeholder="od"
           />
           <hr className="w-[15px] border-2 border-black" />
           <input
             className="w-1/3 p-2 text-center border-2 border-black appearance-none font-bold"
-            type="number"
+            type="text"
             name="cena-do"
             id="cena-do"
+            placeholder="do"
           />
         </div>
       </div>
