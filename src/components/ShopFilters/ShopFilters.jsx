@@ -1,7 +1,7 @@
 export default function ShopFilters() {
   return (
     <div className="border-2 border-black px-2 py-4">
-      <h3 className="text-2xl text-center font-bold text-white bg-neutral-500">
+      <h3 className="mb-2 text-2xl text-center font-bold text-white bg-neutral-500">
         FILTROWANIE
       </h3>
       {/* KATEGORIE */}
