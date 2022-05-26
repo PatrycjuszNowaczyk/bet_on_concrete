@@ -1,0 +1,81 @@
+let shopData = {
+  items: [
+    {
+      id: 1,
+      name: "gryzak skórzany",
+      price: "10",
+      producer: "Animini",
+      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      carouselImgs: [
+        "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+        "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
+        "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
+      ],
+      description: "To jest opis gryzaka",
+      category: "gryzaki",
+      availability: "dostępny",
+    },
+    {
+      id: 2,
+      name: "przysmak zielony",
+      price: "12",
+      producer: "Animini",
+      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      carouselImgs: [
+        "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+        "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
+        "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
+      ],
+      description: "To jest opis przysmaku",
+      category: "przysmaki",
+      availability: "dostępny",
+    },
+    {
+      id: 3,
+      name: "suplement na sierść",
+      price: "33",
+      producer: "Doggy",
+      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      carouselImgs: [
+        "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+        "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
+        "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
+      ],
+      description: "To jest opis przysmaku",
+      category: "przysmaki",
+      availability: "dostępny",
+    },
+    {
+      id: 4,
+      name: "kosmetyk do głowy",
+      price: "94",
+      producer: "PetLi",
+      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      carouselImgs: [
+        "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+        "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
+        "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
+      ],
+      description: "To jest opis kosmetyku do głowy dla psa",
+      category: "kosmetyki",
+      availability: "dostępny",
+    },
+    {
+      id: 5,
+      name: "akcesorium dla psa",
+      price: "125",
+      producer: "Choppy",
+      mainImg: "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+      carouselImgs: [
+        "https://cf.shopee.pl/file/ae169f5d030b92a90e5e53992a04e8ab",
+        "https://cf.shopee.pl/file/57020a53ce5be73c05560178a4563f64",
+        "https://cf.shopee.pl/file/a873d77a44fdfa8d4f53801d48e03f3f",
+      ],
+      description: "To jest opis akcesorium dla psa",
+      category: "akcesoria",
+      availability: "na zamówienie",
+    },
+  ],
+};
+
+export default shopData;
