@@ -40,7 +40,7 @@ export default class CategoriesWrapper extends Component {
   }
   render() {
     return (
-      <div className="container mx-auto flex flex-wrap gap-4 p-4 font-AdventPro selection:bg-neutral-700 selection:text-neutral-300">
+      <div className="container mx-auto flex flex-wrap gap-4 p-4 font-AdventPro">
         {this.state.categories.map(({ id, title, imgUrl }) => {
           return <CategoryItem key={id} title={title} imgUrl={imgUrl} />;
         })}
