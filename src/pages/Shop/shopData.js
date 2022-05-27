@@ -23,7 +23,8 @@ let shopData = {
           name: "poroże jelenia",
           price: 17,
           producer: "nat4dog",
-          mainImg: "https://nat4dog.pl/userdata/public/gfx/1257/188cfd6d90775ade234ffd6a8f1624f3.jpg",
+          mainImg:
+            "https://nat4dog.pl/userdata/public/gfx/1257/188cfd6d90775ade234ffd6a8f1624f3.jpg",
           carouselImgs: [
             "https://4dogsoriginal.com/wp-content/uploads/2021/04/gryzak-z-poroza-jelenia-rozmiar-S-hard-012_web.jpg",
             "https://4dogsoriginal.com/wp-content/uploads/2021/04/poroze-jelenia-dla-psa-rozmiar-M-hard-02.jpg",
@@ -32,7 +33,7 @@ let shopData = {
           ],
           description: "Poroże ze zrzutu jelenia jako gryzak dla psa",
           availability: "dostępny",
-        }
+        },
       ],
     },
     {
@@ -129,6 +130,8 @@ let shopData = {
             "https://4wild.eu/userdata/public/gfx/140/1beb0b272b67cc7160f3952710ad0793.jpg",
             "https://4wild.eu/userdata/public/gfx/141/0822b385317c2625e78aca7403389919.jpg",
           ],
+          description: "To jest opis akcesorium dla psa",
+          availability: "dostępny",
         },
       ],
     },
