@@ -1,4 +1,4 @@
-export default function ShopFilters() {
+export default function ShopFilters({ filterData }) {
   return (
     <div className="border-2 border-black px-2 py-4">
       <h3 className="mb-2 text-2xl text-center font-bold text-white bg-neutral-500">
@@ -8,19 +8,19 @@ export default function ShopFilters() {
       <ul className="pl-12 pb-2">
         <h3 className="text-xl font-bold">Kategorie:</h3>
         <li className="pl-4">
-          <label htmlFor="kategorie-all" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="kategorie-all" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
               defaultChecked="true"
-              name="kategorie-all"
+              name="all"
               id="kategorie-all"
             />
             <span>wszystko</span>
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="gryzaki" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="gryzaki" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -31,7 +31,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="przysmaki" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="przysmaki" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -42,7 +42,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="suplementy" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="suplementy" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -53,7 +53,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="kosmetyki" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="kosmetyki" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -64,7 +64,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="akcesoria" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="akcesoria" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -79,19 +79,19 @@ export default function ShopFilters() {
       <ul className="pl-12 pb-2">
         <h3 className="text-xl font-bold">Producent:</h3>
         <li className="pl-4">
-          <label htmlFor="producent-all" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="producent-all" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
               defaultChecked="true"
-              name="producent-all"
+              name="all"
               id="producent-all"
             />
             <span>wszystko</span>
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="Animini" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="Animini" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -102,7 +102,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="Doggy" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="Doggy" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -113,7 +113,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="PetLi" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="PetLi" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -124,7 +124,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="Choppy" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="Choppy" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -139,19 +139,19 @@ export default function ShopFilters() {
       <ul className="pl-12 pb-2">
         <h3 className="text-xl font-bold">Dostępność:</h3>
         <li className="pl-4">
-          <label htmlFor="dostepnosc-all" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="dostepnosc-all" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
               defaultChecked="true"
-              name="dostepnosc-all"
+              name="all"
               id="dostepnosc-all"
             />
             <span>wszystko</span>
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="dostepny" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="dostepny" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
@@ -162,7 +162,7 @@ export default function ShopFilters() {
           </label>
         </li>
         <li className="pl-4">
-          <label htmlFor="na-zamowienie" className="cursor-pointer">
+          <label onClick={e=>filterData(e)} htmlFor="na-zamowienie" className="cursor-pointer">
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
