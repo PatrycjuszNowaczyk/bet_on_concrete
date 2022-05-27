@@ -12,6 +12,7 @@ export default function ShopFilters() {
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
+              defaultChecked="true"
               name="kategorie-all"
               id="kategorie-all"
             />
@@ -82,6 +83,7 @@ export default function ShopFilters() {
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
+              defaultChecked="true"
               name="producent-all"
               id="producent-all"
             />
@@ -141,6 +143,7 @@ export default function ShopFilters() {
             <input
               className="mr-2 cursor-pointer border-1 border-black accent-black"
               type="checkbox"
+              defaultChecked="true"
               name="dostepnosc-all"
               id="dostepnosc-all"
             />
