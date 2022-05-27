@@ -3,6 +3,16 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
 export default class ShopCategory extends Component {
   render() {
+    const handleArithmetic = (e) => {
+      const { name } = e.target;
+      if (name === "plus-button") {
+        e.target.nextSibling.value++;
+      } else if (name === "minus-button") {
+        if (e.target.previousSibling.value > 1) {
+          e.target.previousSibling.value--;
+        }
+      }
+    };
     return (
       <>
         {this.props.items.map((item) => {
@@ -28,13 +38,23 @@ export default class ShopCategory extends Component {
                 <div className="bg-white w-full">
                   <div className="flex p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-75 group-hover:duration-300 group-hover:delay-500">
                     <div className="flex justify-center items-center basis-1/2">
-                      <button className="p-1 px-2 border-2 border-black hover:bg-neutral-500 hover:text-white font-bold uppercase">
+                      <button className="p-1 px-2 mr-4 border-2 border-black hover:bg-neutral-500 hover:text-white font-bold uppercase">
                         dodaj
                       </button>
                     </div>
                     <div className="flex justify-center items-center basis-1/2">
-                      <button className="p-2">
-                        <AiOutlinePlus />
+                      <button
+                        name="plus-button"
+                        className="p-2"
+                        onClick={handleArithmetic}
+                      >
+                        <IconContext.Provider
+                          value={{
+                            color: "black",
+                          }}
+                        >
+                          <AiOutlinePlus pointerEvents="none" />
+                        </IconContext.Provider>
                       </button>
                       <input
                         className="px-1 text-center border-2 border-black w-12"
@@ -43,13 +63,17 @@ export default class ShopCategory extends Component {
                         id=""
                         defaultValue={1}
                       />
-                      <button className="px-1">
+                      <button
+                        name="minus-button"
+                        className="px-1"
+                        onClick={handleArithmetic}
+                      >
                         <IconContext.Provider
                           value={{
                             color: "black",
                           }}
                         >
-                          <AiOutlineMinus />
+                          <AiOutlineMinus pointerEvents="none" />
                         </IconContext.Provider>
                       </button>
                     </div>
