@@ -6,16 +6,24 @@ import ShopCategoriesWrapper from "../../components/ShopCategoriesWrapper/ShopCa
 export default class Shop extends Component {
   constructor(props) {
     super(props);
-    this.state = ShopData;
-    this.state.filtereredCategories = this.handleFilterData();
+    const { categories } = ShopData;
+    this.state = { categories, filteredCategories: categories };
+    // this.setState({ filteredCategories: this.handleFilterData(null, null) });
+    // this.state.filtereredCategories = this.handleFilterData();
+    // this.state.filteredCategories = this.handleFilterData();
   }
-  handleFilterData = (e) => {
+
+  handleFilterData = (e, filter) => {
+    let price = 0;
+    if (filter) {
+      price = filter.price;
+      // console.log(price);
+    }
     // e && e.preventDefault();
     let { categories } = this.state;
     let filteredCategories = categories.filter(
       (category) =>
-        category.items.filter((item) => item.price > 17 && item.price < 34)
-          .length > 0
+        category.items.filter((item) => item.price > price).length > 0
     );
     // console.log(filteredCategories);
     if (e && e.target.type === "checkbox") {
@@ -39,8 +47,15 @@ export default class Shop extends Component {
         }
       }
     }
+    this.setState({ filteredCategories: filteredCategories }, () => {
+      // console.dir(this.state);
+    });
+    return null;
   };
+
   render() {
+    // console.log(this.state.filteredCategories);
+    // console.log(this.state);
     return (
       <>
         <div className="text-center text-4xl bg-black py-2 mb-8 text-white">
@@ -52,7 +67,9 @@ export default class Shop extends Component {
           </div>
           <div className="w-2/3 lg:w-3/4 xl:w-4/5">
             <div className="p-2 border-2 ml-8 border-black">
-              <ShopCategoriesWrapper categories={this.state.categories} />
+              <ShopCategoriesWrapper
+                categories={this.state.filteredCategories}
+              />
             </div>
           </div>
         </div>

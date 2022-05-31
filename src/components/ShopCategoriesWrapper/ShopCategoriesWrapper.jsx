@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import ShopCategoryItem from "../ShopCategoryItem/ShopCategoryItem";
 export default class ShopCategoriesWrapper extends Component {
   constructor(props) {
+    // console.log(props);
     super(props);
     this.state = {
       categories: props.categories,
     };
   }
   render() {
-    const { categories } = this.state;
+    // console.log(this.props.categories);
+    const categories = this.props.categories;
+    // console.log(categories);
     return (
       <div>
         {categories.map((category) => {
@@ -23,7 +26,7 @@ export default class ShopCategoriesWrapper extends Component {
                   {category.name}
                 </h2>
                 <div className="grid gap-4 grid-cols-3 xl:grid-cols-4">
-                  <ShopCategoryItem items={category.items}/>
+                  <ShopCategoryItem items={category.items} />
                 </div>
               </div>
             );
